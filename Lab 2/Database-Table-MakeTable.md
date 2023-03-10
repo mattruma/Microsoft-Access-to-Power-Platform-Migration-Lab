@@ -19,17 +19,32 @@ erDiagram
 
 ### make_id
 
-**Type**: Long Integer, AutoNumber
+Microsoft Access Properties
 
-**Description**: The unique identifier of the record
+* **Type**: Long Integer, AutoNumber
+* **Description**: The unique identifier of the record
+
+Microsoft Dataverse Properties
+
+* **Name**: Old Make Id
+* **Type**: Single line of text
+* **Required**: Optional
+* **Description**: The Microsoft Accesss unique identifier of the record
 
 ### name
 
-**Type**: Short Text
+Microsoft Access Properties
 
-**Size**: 255
+* **Type**: Short Text
+* **Size**: 255
+* **Description**: The name of the make, e.g., Ford or Honda
 
-**Description**: The name of the make, e.g., `Ford` or `Honda`
+Microsoft Dataverse Properties
+
+* **Name**: Name
+* **Type**: Single line of text
+* **Required**: Business required
+* **Description**: Same as Microsoft Access Property
 
 ## Relationships
 

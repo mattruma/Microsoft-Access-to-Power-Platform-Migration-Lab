@@ -6,6 +6,8 @@ This table manages all the available makes that can be associated with a car, e.
 
 ## Fields
 
+List of fields in the table.
+
 ```mermaid
 erDiagram
     Make {
@@ -30,5 +32,7 @@ erDiagram
 **Description**: The name of the make, e.g., `Ford` or `Honda`
 
 ## Relationships
+
+The relationships between tables in the database, that includes this table.
 
 [Make Table Car Table](Database-Table-Relationships.md)

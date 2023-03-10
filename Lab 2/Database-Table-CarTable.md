@@ -8,6 +8,8 @@ This table manages all the available cars that are part of the inventory, e.g., 
 
 ## Fields
 
+List of fields in the table.
+
 ```mermaid
 erDiagram
     Car {
@@ -79,5 +81,7 @@ erDiagram
 **Row Source**: `Active` and `Inactive`
 
 ## Relationships
+
+The relationships between tables in the database, that includes this table.
 
 [Make Table Car Table](Database-Table-Relationships.md)

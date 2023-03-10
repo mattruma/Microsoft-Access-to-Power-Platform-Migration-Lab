@@ -2,7 +2,14 @@
 
 This table manages all the available makes that can be associated with a car, e.g., `Ford` or `Honda`.
 
-**Primary Key(s)**: make_id
+Microsoft Access Properties
+
+* **Primary Key(s)**: make_id
+* **Foreign Key(s)**: N/A
+
+Dataverse Properties
+
+* **Unique Primary Column**: Name
 
 ## Fields
 
@@ -27,7 +34,7 @@ Microsoft Access Properties
 Microsoft Dataverse Properties
 
 * **Name**: Old Make Id
-* **Type**: Single line of text
+* **Type**: Whole number
 * **Required**: Optional
 * **Description**: The Microsoft Accesss unique identifier of the record
 

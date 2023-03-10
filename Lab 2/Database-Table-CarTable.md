@@ -2,9 +2,14 @@
 
 This table manages all the available cars that are part of the inventory, e.g., `2014 Ford Edge` or `2011 Honda Accord`.
 
-**Primary Key(s)**: car_id
+Microsoft Access Properties
 
-**Foreign Key(s)**: make_id
+* **Primary Key(s)**: car_id
+* **Foreign Key(s)**: make_id
+
+Dataverse Properties
+
+* **Unique Primary Column**: Model
 
 ## Fields
 
@@ -26,59 +31,103 @@ erDiagram
 
 ### car_id
 
-**Type**: Long Integer, AutoNumber
+Microsoft Access Properties
 
-**Description**: The unique identifier of the record
+* **Type**: Long Integer, AutoNumber
+* **Description**: The unique identifier of the record
+
+Microsoft Dataverse Properties
+
+* **Name**: Old Car Id
+* **Type**: Whole number
+* **Required**: Optional
+* **Description**: The Microsoft Accesss unique identifier of the record
 
 ### year
 
-**Type**: Long Integer
+Microsoft Access Properties
 
-**Description**: The year of the car
+* **Type**: Long Integer
+* **Description**: The year of the car
+
+Microsoft Dataverse Properties
+
+* **Name**: Year
+* **Type**: Whole number
+* **Required**: Optional
+* **Description**: Same as Microsoft Access Property
 
 ### make_id
 
-**Type**: Long Integer, Lookup
+Microsoft Access Properties
 
-**Description**: Foreign key relationship to the `Make Table`, determines what the make of the car is, e.g. `Ford`
+* **Type**: Long Integer, Lookup
+* **Description**: Foreign key relationship to the `Make Table`, determines what the make of the car is, e.g. `Ford`
+* **Row Source Type**: Table/Query
+* **Row Source**: `SELECT [Make Table].make_id, [Make Table].name FROM [Make Table] ORDER BY [name];`
 
-**Row Source Type**: Table/Query
+Microsoft Dataverse Properties
 
-**Row Source**: `SELECT [Make Table].make_id, [Make Table].name FROM [Make Table] ORDER BY [name];`
+* **Name**: Old Make Id
+* **Type**: Whole number
+* **Required**: Optional
+* **Description**: Same as Microsoft Access Property
 
 ### model
 
-**Type**: Short Text
+Microsoft Access Properties
 
-**Size**: 255
+* **Type**: Short Text
+* **Size**: 255
+* **Description**: The name of the model, e.g., Edge or Accord
 
-**Description**: The name of the model, e.g., Edge or Accord
+Microsoft Dataverse Properties
+
+* **Name**: Model
+* **Type**: Single line of text
+* **Required**: Business required
+* **Description**: Same as Microsoft Access Property
 
 ### retail_price
 
-**Type**: Currency
+Microsoft Access Properties
 
-**Description**: The selling price of the car
+* **Type**: Currency
+* **Description**: The selling price of the car
+
+Microsoft Dataverse Properties
+
+* **Name**: Price
+* **Type**: Currency
+* **Required**: Optional
+* **Description**: Same as Microsoft Access Property
 
 ### body_type
 
-**Type**: Short, Lookup
+Microsoft Access Properties
 
-**Description**: The body style of the car
+* **Type**: Short, Lookup
+* **Description**: The body style of the car
+* **Row Source Type**: Value List
+* **Row Source**: `Convertible`, `Coupe`, `Hatchback`, `Minivan`, `Pickup Truck`, `Sedan`, `Sports Car`, `Sport-Utility Vehicle (SUV)` and `Station Wagon`
 
-**Row Source Type**: Value List
+Microsoft Dataverse Properties
 
-**Row Source**: `Convertible`, `Coupe`, `Hatchback`, `Minivan`, `Pickup Truck`, `Sedan`, `Sports Car`, `Sport-Utility Vehicle (SUV)` and `Station Wagon`
+* **Name**: Body
+* **Type**: Choice
+* **Required**: Optional
+* **Description**: Same as Microsoft Access Property
+
+Note: Create Choices for Car Body from the Row Source for the Microsoft Access property, e.g. Convertiable.
 
 ### status
 
-**Type**: Short, Lookup
+Microsoft Access Properties
 
-**Description**: Determines if the car is still available for purchase
-
-**Row Source Type**: Value List
-
-**Row Source**: `Active` and `Inactive`
+* **Type**: Short, Lookup
+* **Description**: Determines if the car is still available for purchase
+* **Row Source Type**: Value List
+* **Row Source**: `Active` and `Inactive`
 
 ## Relationships
 

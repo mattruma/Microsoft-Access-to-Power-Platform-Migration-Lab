@@ -6,7 +6,7 @@ This table manages all the available makes that can be associated with a car, e.
 
 ## Fields
 
-List of fields in the table.
+The fields that make up this table.
 
 ```mermaid
 erDiagram

@@ -8,7 +8,7 @@ This table manages all the available cars that are part of the inventory, e.g., 
 
 ## Fields
 
-List of fields in the table.
+The fields that make up this table.
 
 ```mermaid
 erDiagram

@@ -22,37 +22,10 @@ This is the total number of team member who are using the Microsoft Access datab
 
 ## Tables
 
-### Make Table
+[Make Table](Table-MakeTable.md)
 
-**Table Name**: Make Table
+## Queries
 
-**Purpose**: To manage all the available makes that can be associated with a car, e.g., `Ford` or `Honda`.
+## Forms
 
-**Primary Key**: make_id
-
-#### Fields
-
-**Field Name**: make_id
-
-**Type**: Long Integer, AutoNumber
-
-#### Relationships
-
-**Relationship Name**: Make Table Car Table
-
-**Attributes**: Enforced
-
-**Relationship Type**: One-To-Many
-
-```mermaid
-erDiagram
-    Make |o--o{ Car : has 
-    Make {
-        int make_id
-    }
-    Car {
-        int car_id
-        int make_id
-    }
-
-```
+## Reports

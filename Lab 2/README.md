@@ -8,41 +8,41 @@ Here is an example of what a sample Database Inventory report might look like.
 
 ## Database
 
-**Database Name**: `CarDatabase.accb`
+**Database Name**: CarDatabase.accb
 
-**Purpose**: `Manages car inventory for a local car dealership.`
+**Purpose**: Manages car inventory for a local car dealership
 
-**Estimated Number of Users**: `30`
+**Estimated Number of Users**: 30
 
 This is the total number of team members using the Microsoft Access database.
 
-**Estimated Number of Simultaneous Users**: `10`
+**Estimated Number of Simultaneous Users**: 10
 
 This is the total number of team member who are using the Microsoft Access database at the same time.
 
 ## Tables
 
-### Make
+### Make Table
 
-**Table Name**: Make
+**Table Name**: Make Table
 
 **Purpose**: To manage all the available makes that can be associated with a car, e.g., `Ford` or `Honda`.
 
-**Primary Key**: `make_id`
+**Primary Key**: make_id
 
-### Fields
+#### Fields
 
-**Field Name**: `make_id`
+**Field Name**: make_id
 
-**Type**: `Long Integer`, `AutoNumber`
+**Type**: Long Integer, AutoNumber
 
-### Relationships
+#### Relationships
 
-**Relationship Name**: `Make Table Car Table`
+**Relationship Name**: Make Table Car Table
 
-**Attributes**: `Enforced`
+**Attributes**: Enforced
 
-**Relationship Type**: `One-To-Many`
+**Relationship Type**: One-To-Many
 
 ```mermaid
 erDiagram

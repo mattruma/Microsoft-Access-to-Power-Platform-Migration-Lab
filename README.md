@@ -8,7 +8,7 @@ Lab 2, and beyond, are based on the steps outlined in Lab 1 - Create a plan.
 
 * Lab 0 - Setup
 * Lab 1 - Create a plan
-* Lab 2 - Prepare data - Migrate the Access database to Dataverse
+* [Lab 2 - Prepare data - Migrate the Access database to Dataverse](Lab-2/README.MD)
 * Lab 3 - Develop solution - Modify the forms
 * Lab 4 - Develop solution - Modify the views
 * Lab 5 - Develop solution - Create a Model-Driven App

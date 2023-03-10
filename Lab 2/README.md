@@ -6,19 +6,17 @@ The first thing we will want to do is inventory all the objects, including table
 
 Here is an example of what a sample Database Inventory report might look like.
 
-## Database Inventory Report
+## Database
 
-### Database
+**Database Name**: `CarDatabase.accb`
 
-Database Name: `CarDatabase.accb`
+**Purpose**: `Manages car inventory for a local car dealership.`
 
-Purpose: `Manages car inventory for a local car dealership.`
-
-Estimated Number of Users `30`
+**Estimated Number of Users**: `30`
 
 This is the total number of team members using the Microsoft Access database.
 
-Estimated Number of Simultaneous Users: `10`
+**Estimated Number of Simultaneous Users**: `10`
 
 This is the total number of team member who are using the Microsoft Access database at the same time.
 

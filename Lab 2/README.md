@@ -22,6 +22,8 @@ This is the total number of team member who are using the Microsoft Access datab
 
 ## Tables
 
+### Make
+
 **Table Name**: Make
 
 **Purpose**: To manage all the available makes that can be associated with a car, e.g., `Ford` or `Honda`.
@@ -34,9 +36,13 @@ This is the total number of team member who are using the Microsoft Access datab
 
 **Type**: `Long Integer`, `AutoNumber`
 
-#### Relationships
+### Relationships
 
 **Relationship Name**: `Make Table Car Table`
+
+**Attributes**: `Enforced`
+
+**Relationship Type**: `One-To-Many`
 
 ```mermaid
 erDiagram
@@ -50,7 +56,3 @@ erDiagram
     }
 
 ```
-
-**Attributes**: `Enforced`
-
-**Relationship Type**: `One-To-Many`

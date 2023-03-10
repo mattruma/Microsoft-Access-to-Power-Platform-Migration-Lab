@@ -4,11 +4,13 @@ This table manages all the available makes that can be associated with a car, e.
 
 Microsoft Access Properties
 
+* **Name**: Make Table
 * **Primary Key(s)**: make_id
 * **Foreign Key(s)**: N/A
 
 Dataverse Properties
 
+* **Name**: Make
 * **Unique Primary Column**: Name
 
 ## Fields

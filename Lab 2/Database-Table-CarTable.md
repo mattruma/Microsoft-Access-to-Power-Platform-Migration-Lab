@@ -4,11 +4,13 @@ This table manages all the available cars that are part of the inventory, e.g., 
 
 Microsoft Access Properties
 
+* **Name**: Car Table
 * **Primary Key(s)**: car_id
 * **Foreign Key(s)**: make_id
 
 Dataverse Properties
 
+* **Name**: Car
 * **Unique Primary Column**: Model
 
 ## Fields
@@ -41,7 +43,7 @@ Microsoft Dataverse Properties
 * **Name**: Old Car Id
 * **Type**: Whole number
 * **Required**: Optional
-* **Description**: The Microsoft Accesss unique identifier of the record
+* **Description**: The Microsoft Access unique identifier of the record
 
 ### year
 
@@ -72,6 +74,8 @@ Microsoft Dataverse Properties
 * **Type**: Whole number
 * **Required**: Optional
 * **Description**: Same as Microsoft Access Property
+
+Note: Create a Many-to-one relationship with Make Table.
 
 ### model
 
@@ -113,12 +117,12 @@ Microsoft Access Properties
 
 Microsoft Dataverse Properties
 
-* **Name**: Body
+* **Name**: Body Type
 * **Type**: Choice
 * **Required**: Optional
 * **Description**: Same as Microsoft Access Property
 
-Note: Create Choices for Car Body from the Row Source for the Microsoft Access property, e.g. Convertiable.
+Note: Create Choices called Car Body Type and populate with values from the Row Source for the Microsoft Access property, e.g. Convertible. Make sure to name them correctly.
 
 ### status
 
@@ -128,6 +132,13 @@ Microsoft Access Properties
 * **Description**: Determines if the car is still available for purchase
 * **Row Source Type**: Value List
 * **Row Source**: `Active` and `Inactive`
+
+Microsoft Dataverse Properties
+
+* **Name**: Old Status
+* **Type**: Single line of text
+* **Required**: Optional
+* **Description**: Same as Microsoft Access Property
 
 ## Relationships
 
